@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <header>
+        <h1>Jogo da Velha</h1>
+        <h2>Jogador da vez: <span id="JogadorDaVez"></span></h2>
+        <h3>Pontos jogador X: <span  id="jogadorX">0</span><br> pontos jogador O: <span id="jogadorO">0</span> </h3>
+        <h3 id="vitoriaUsuario"></h3><br>
+        <button onclick="reiniciarJogo()">Reiniciar jogo</button>
+    </header>
+    <main>
+        <div class="tile_row">
+            <span onclick="marcarCasa(1)" id="casa1" class="tile">1</span>
+            <span onclick="marcarCasa(2)" id="casa2" class="tile">2</span>
+            <span onclick="marcarCasa(3)"  id="casa3" class="tile">3</span>
+        </div>
+        <div class="tile_row">
+            <span onclick="marcarCasa(4)"  id="casa4" class="tile">4</span>
+            <span onclick="marcarCasa(5)"  id="casa5" class="tile">5</span>
+            <span onclick="marcarCasa(6)"  id="casa6" class="tile">6</span>
+        </div>
+        <div class="tile_row">
+            <span onclick="marcarCasa(7)"  id="casa7" class="tile">7</span>
+            <span onclick="marcarCasa(8)"  id="casa8" class="tile">8</span>
+            <span onclick="marcarCasa(9)"  id="casa9" class="tile">9</span>
+        </div>
+        <a href="index.html">clique aqui para reiniciar jogo e pontuação.</a>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
